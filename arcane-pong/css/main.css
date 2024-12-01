@@ -1,0 +1,324 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+
+}
+/* ---------- STATE_WELCOME ----------- */
+#ball {
+  position: absolute;
+  z-index: 1;
+  width: 10%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* ---------- STATE_CHARSELECT ----------- */
+#characters {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  gap: 10vw;
+}
+
+#characters button {
+  font-family: "DotGothic16", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.1vw;
+}
+
+#charReady button {
+  font-family: "DotGothic16", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.1vw;
+}
+
+.character{
+  background-color: black;
+  color: white;
+  border: white, 3px, solid;
+  width: 200px;
+  height: 100px;
+}
+
+.clickedChar1 {
+  background-color: #1AB7CF;
+  color: #00FFD4;
+}
+
+.clickedChar2 {
+  background-color: #DCB81B;
+  color: #F7FF00;
+}
+
+#charReady {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%);;
+  gap: 10vw;
+}
+
+#p1CharacterCAITLYN {
+  position: absolute;
+  /* background-color: #2C2935; */
+  top: 3%;
+  left: 5%;
+  width: 300px;
+  height: 300px;
+  background-image: url('/assets/img/CAITLYN-p1.gif');
+  background-size: cover;
+}
+
+#p2CharacterCAITLYN {
+  position: absolute;
+  /* background-color: #2C2935; */
+  top: 3%;
+  right: 5%;
+  width: 300px;
+  height: 300px;
+  background-image: url('/assets/img/CAITLYN-p1.gif');
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+#p1CharacterEKKO {
+  position: absolute;
+  /* background-color: #2C2935; */
+  top: 3%;
+  left: 5%;
+  width: 300px;
+  height: 300px;
+  background-image: url('/assets/img/EKKO-p2.gif');
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+#p2CharacterEKKO {
+  position: absolute;
+  /* background-color: #2C2935; */
+  top: 3%;
+  right: 5%;
+  width: 300px;
+  height: 300px;
+  background-image: url('/assets/img/EKKO-p2.gif');
+  background-size: cover;
+}
+
+#p1CharacterVI {
+  position: absolute;
+  /* background-color: #2C2935; */
+  top: 3%;
+  left: 5%;
+  width: 300px;
+  height: 300px;
+  background-image: url('/assets/img/VI-p1.gif');
+  background-size: cover;
+
+}
+
+#p2CharacterVI {
+  position: absolute;
+  /* background-color: #2C2935; */
+  top: 3%;
+  right: 5%;
+  width: 300px;
+  height: 300px;
+  background-image: url('/assets/img/VI-p1.gif');
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+#p1CharacterJINX {
+  position: absolute;
+  /* background-color: #2C2935; */
+  top: 3%;
+  left: 5%;
+  width: 300px;
+  height: 300px;
+  background-image: url('/assets/img/JINX-p1.gif');
+  background-size: cover;
+
+}
+
+#p2CharacterJINX {
+  position: absolute;
+  /* background-color: #2C2935; */
+  top: 3%;
+  right: 5%;
+  width: 300px;
+  height: 300px;
+  background-image: url('/assets/img/JINX-p1.gif');
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+
+/* ----------STATE_PLAYING----------- */
+
+.meterUnit{
+  background-color: black;
+  color: white;
+  border: white, 3px, solid;
+  width: 50px;
+  height: 10px;
+}
+
+#leftMeter {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 90%;
+  left: 25%;
+  transform: translate(-50%);
+  gap: 1vw;
+}
+
+#rightMeter {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 90%;
+  left: 75%;
+  transform: translate(-50%);
+  gap: 1vw;
+}
+
+.active {
+  background-color: greenyellow;
+}
+
+#CAITLYNUltimateleft {
+  position: absolute;
+  /* background-color: #2C2935; */
+  top: 0%;
+  left: 0%;
+  width: 500px;
+  height: 400px;
+  transform: translate(-25%, -50%);
+  background-image: url('/assets/img/CAITLYNUltimate.png');
+  background-size: cover;
+}
+
+#CAITLYNUltimateright {
+  position: absolute;
+  /* background-color: #2C2935; */
+  top: -25%;
+  right: -7%;
+  width: 500px;
+  height: 400px;
+  background-image: url('/assets/img/CAITLYNUltimate.png');
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+#EKKOUltimateleft {
+  position: absolute;
+  /* background-color: #2C2935; */
+  top: -25%;
+  left: -7%;
+  width: 500px;
+  height: 400px;
+  background-image: url('/assets/img/EKKOUltimate.png');
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+#EKKOUltimateright {
+  position: absolute;
+  /* background-color: #2C2935; */
+  top: -25%;
+  right: -7%;
+  width: 500px;
+  height: 400px;
+  background-image: url('/assets/img/EKKOUltimate.png');
+  background-size: cover;
+}
+
+#VIUltimateleft {
+  position: absolute;
+  /* background-color: #2C2935; */
+  top: 0%;
+  left: 1%;
+  width: 500px;
+  height: 400px;
+  transform: translate(-25%, -50%);
+  background-image: url('/assets/img/VIUltimate.png');
+  background-size: cover;
+}
+
+#VIUltimateright {
+  position: absolute;
+  /* background-color: #2C2935; */
+  top: -25%;
+  right: -7%;
+  width: 500px;
+  height: 400px;
+  background-image: url('/assets/img/VIUltimate.png');
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+#JINXUltimateleft {
+  position: absolute;
+  /* background-color: #2C2935; */
+  top: 0%;
+  left: 0%;
+  width: 500px;
+  height: 400px;
+  transform: translate(-25%, -50%);
+  background-image: url('/assets/img/JINXUltimate.png');
+  background-size: cover;
+}
+
+#JINXUltimateright {
+  position: absolute;
+  /* background-color: #2C2935; */
+  top: -25%;
+  right: -7%;
+  width: 500px;
+  height: 400px;
+  background-image: url('/assets/img/JINXUltimate.png');
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+
+
+
+
+/* ----------STATE_WINNER----------- */
+#buttonsContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%);
+  gap: 10vw;
+}
+
+#buttonsContainer button {
+  background-color: black;
+  color: white;
+  border: white, 3px, solid;
+  width: 200px;
+  height: 100px;
+  font-family: "DotGothic16", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.1vw;
+}
+
+#buttonsContainer button:hover {
+  background-color: white;
+  color: black;
+  transition: 1s;
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet">
+  <script src="/js/sketch.js"></script>
+  <script type="text/javascript" src="js/jquery-3.7.1.min (1).js"></script>
+  <script type="text/javascript" src="js/p5.min.js"></script>
+  <title>hoi</title>
+</head>
+
+<body>
+  <div id="EVERYTHING">
+    <!-- STATE_WELCOME-->
+    <div id="STATE_WELCOME">
+      <!-- <img src="css/img/ball.png" alt="ball" id = "ball"> -->
+    </div>
+
+    <!-- STATE_CHARSELECT-->
+    <div id="STATE_CHARSELECT">
+      <div id="charGifs">
+        <div id="p1CharacterCAITLYN"></div>
+        <div id="p2CharacterCAITLYN"></div>
+        <div id="p1CharacterEKKO"></div>
+        <div id="p2CharacterEKKO"></div>
+        <div id="p1CharacterVI"></div>
+        <div id="p2CharacterVI"></div>
+        <div id="p1CharacterJINX"></div>
+        <div id="p2CharacterJINX"></div>
+      </div>
+      <div id="characters">
+        <button class="character" id="char1">JINX</button>
+        <button class="character" id="char2">VI</button>
+        <button class="character" id="char3">CAITLYN</button>
+        <button class="character" id="char4">EKKO</button>
+      </div>
+
+      <div id="charReady">
+        <button id="start" class="character">START!</button>
+        <button id="back" class="character">GO BACK</button>
+      </div>
+    </div>
+    <!-- STATE_PLAYING-->
+    <div id="STATE_PLAYING">
+      <div id="leftMeter">
+        <div id="leftMeter1"></div>
+        <div id="leftMeter2"></div>
+        <div id="leftMeter3"></div>
+        <div id="leftMeter4"></div>
+        <div id="leftMeter5"></div>
+      </div>
+      <div id="rightMeter">
+        <div id="rightMeter1"></div>
+        <div id="rightMeter2"></div>
+        <div id="rightMeter3"></div>
+        <div id="rightMeter4"></div>
+        <div id="rightMeter5"></div>
+      </div>
+      <div id="ultimates">
+        <div id="CAITLYNUltimateleft"></div>
+        <div id="CAITLYNUltimateright"></div>
+        <div id="EKKOUltimateleft"></div>
+        <div id="EKKOUltimateright"></div>
+        <div id="VIUltimateleft"></div>
+        <div id="VIUltimateright"></div>
+        <div id="JINXUltimateleft"></div>
+        <div id="JINXUltimateright"></div>
+      </div>
+    </div>
+    <!-- STATE_WINNER-->
+    <div id="STATE_WINNER">
+      <div id="buttonsContainer">
+        <button id="restart">Play Again!</button>
+        <button id="exit">Exit Game</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
